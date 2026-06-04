@@ -7,6 +7,10 @@ const authRoutes = require("./routes/authRoutes");
 const projectRoutes =require("./routes/projectRoutes");
 const requirementRoutes =
 require("./routes/requirementRoutes");
+const runRoutes =
+require("./routes/runRoutes");
+
+
 const app = express();
 
 connectDB();
@@ -19,6 +23,7 @@ app.use(
   "/api/projects",
   requirementRoutes
 );
+app.use("/api/runs", runRoutes);
 app.get("/", (req, res) => {
   res.json({
     message: "API is running",
