@@ -363,24 +363,24 @@ GET /api/dashboard/stats
 
 ![Dashboard](screenshots/Dashboard.png)
 
-### Projects
-
-![Projects](screenshots/Projects.png)
-
 ### Requirements
 
-![Requirements](screenshots/Requirements.png)
+![Requirements](screenshots/Projects.png)
+
+### Projects
+
+![Projects](screenshots/Requirements.png)
 
 ### Planner output
 
-![Planner](screenshots/Planner output.png)
+![Planneroutput](screenshots/Planneroutput.png)
 
 ### Coder output
 
-![Coder](screenshots/workflow.png)
+![Coderoutput](screenshots/Coderoutput.png)
 ### Reviewer output
 
-![Reviewer](screenshots/Reviewer output.png)
+![Revieweroutput](screenshots/Revieweroutput.png)
 
 
 ---
