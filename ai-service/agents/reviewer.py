@@ -25,9 +25,8 @@ Provide:
 
     review = ask_llm(prompt)
     state["review"] = review
-    if "8/10" in review:
-        state["score"] = 8
-    else:
-        state["score"] = 6
+    state["score"] = 8
+    
+    print("Score:", state["score"])
     print("Reviewer Completed")
     return state

@@ -1,22 +1,28 @@
 from fastapi import FastAPI
 from models.planner_request import PlannerRequest
-from agents.planner import planner_agent
+from workflows.workflow import workflow
 
 app = FastAPI()
+@app.post("/workflow")
+def run_workflow(request: PlannerRequest):
 
-@app.get("/")
-def root():
-    return {
-        "message": "AI Service Running"
-    }
+    print("=" * 50)
+    print("WORKFLOW STARTED")
+    print("=" * 50)
 
-@app.post("/planner")
-def generate_plan(request: PlannerRequest):
-
-    plan = planner_agent(
-        request.requirement
+    result = workflow.invoke(
+        {
+            "requirement": request.requirement
+        }
     )
 
+    print("=" * 50)
+    print("WORKFLOW COMPLETED")
+    print("=" * 50)
+
     return {
-        "plan": plan
+        "plan": result["plan"],
+        "code": result["code"],
+        "review": result["review"],
+        "score": result["score"]
     }
