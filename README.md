@@ -87,7 +87,7 @@ Store and visualize:
 
 ## System Architecture
 
-![Architecture](architecture/system-design.png)
+![Architecture](architecture/System-design.io)
 
 ### High-Level Flow
 
@@ -350,21 +350,38 @@ GET /api/dashboard/stats
 
 ## Screenshots
 
+### Register Page
+
+![Workflow](screenshots/Register.png)
+
+
 ### Login Page
 
 ![Login](screenshots/login.png)
 
 ### Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/Dashboard.png)
 
 ### Projects
 
-![Projects](screenshots/projects.png)
+![Projects](screenshots/Projects.png)
 
-### Workflow Execution
+### Requirements
 
-![Workflow](screenshots/workflow.png)
+![Requirements](screenshots/Requirements.png)
+
+### Planner output
+
+![Planner](screenshots/Planner output.png)
+
+### Coder output
+
+![Coder](screenshots/workflow.png)
+### Reviewer output
+
+![Reviewer](screenshots/Reviewer output.png)
+
 
 ---
 
