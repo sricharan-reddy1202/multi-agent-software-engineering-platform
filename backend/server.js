@@ -9,8 +9,8 @@ const requirementRoutes =
 require("./routes/requirementRoutes");
 const runRoutes =
 require("./routes/runRoutes");
-
-
+const dashboardRoutes =
+require("./routes/dashboardRoutes");
 const app = express();
 
 connectDB();
@@ -24,6 +24,10 @@ app.use(
   requirementRoutes
 );
 app.use("/api/runs", runRoutes);
+app.use(
+  "/api/dashboard",
+  dashboardRoutes
+);
 app.get("/", (req, res) => {
   res.json({
     message: "API is running",

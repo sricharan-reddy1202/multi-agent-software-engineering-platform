@@ -12,7 +12,24 @@ const requirementSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    plannerOutput: {
+  type: String,
+  default: "",
+},
+coderOutput: {
+  type: String,
+  default: "",
+},
 
+reviewerOutput: {
+  type: String,
+  default: "",
+},
+
+reviewScore: {
+  type: Number,
+  default: 0,
+},
     status: {
       type: String,
       enum: [
